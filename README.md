@@ -46,9 +46,9 @@ It allows admins to create/manage questions and players to take quizzes with aut
 ## 📂 Project Structure
 
 ```plaintext
-project-root/
+InstaHM_Django/
 ├── manage.py
-├── server/                # Django project
+├── InstaHM_Django/                # Django project
 │   ├── settings.py
 │   ├── urls.py
 │   └── ...
