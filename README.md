@@ -45,29 +45,31 @@ It allows admins to create/manage questions and players to take quizzes with aut
 
 ## 📂 Project Structure
 
+```plaintext
 project-root/
 ├── manage.py
-├── server/ # Django project
-│ ├── settings.py
-│ ├── urls.py
-│ └── ...
-├── quiz/ # Django app
-│ ├── models.py
-│ ├── views.py
-│ ├── serializers.py
-│ ├── api.py
-│ └── management/commands/seed_questions.py
-├── quiz-spa/ # React frontend
-│ ├── src/
-│ │ ├── api/quiz.ts
-│ │ ├── components/PlayerQuestion.tsx
-│ │ ├── pages/
-│ │ ├── store/usePlayer.ts
-│ │ └── types.ts
-│ └── package.json
+├── server/                # Django project
+│   ├── settings.py
+│   ├── urls.py
+│   └── ...
+├── quiz/                  # Django app
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── api.py
+│   └── management/commands/seed_questions.py
+├── quiz-spa/              # React frontend
+│   ├── src/
+│   │   ├── api/quiz.ts
+│   │   ├── components/PlayerQuestion.tsx
+│   │   ├── pages/
+│   │   ├── store/usePlayer.ts
+│   │   └── types.ts
+│   └── package.json
 ├── requirements.txt
 ├── Makefile
 └── README.md
+```
 
 
 ---
