@@ -1,0 +1,62 @@
+# ------------------------
+# Python / Django
+# ------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Django / DRF
+/media/
+staticfiles/
+*.pid
+
+# Migrations (optional — keep if you want full history)
+# quiz/migrations/
+
+# ------------------------
+# Node / React (quiz-spa)
+# ------------------------
+quiz-spa/node_modules/
+quiz-spa/dist/
+quiz-spa/.vite/
+quiz-spa/.cache/
+
+# Frontend build artifacts
+*.tsbuildinfo
+
+# ------------------------
+# IDE / Editor / OS
+# ------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Environment / secrets
+# ------------------------
+.env
+*.env
+.env.local
+.env.*.local
+
+# ------------------------
+# Lint / test caches
+# ------------------------
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+/quiz-spa/.env
