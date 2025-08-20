@@ -31,7 +31,7 @@ class ChoiceSerializer(serializers.ModelSerializer):
 
 
 class QuestionSerializer(serializers.ModelSerializer):
-    choices = ChoiceSerializer(source="question.choices", many=True, read_only=True)
+    choices = ChoiceSerializer(many=True, read_only=True)
     category = serializers.PrimaryKeyRelatedField(
         queryset=Category.objects.all(), allow_null=True, required=False
     )

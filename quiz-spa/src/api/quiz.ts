@@ -37,3 +37,18 @@ export async function createQuestion(payload: QuestionPayload) {
   const { data } = await api.post<Question>("/questions/", payload);
   return data;
 }
+
+export async function getQuestion(id: number) {
+  const { data } = await api.get<Question>(`/questions/${id}/`);
+  return data;
+}
+
+export async function updateQuestion(id: number, payload: QuestionPayload) {
+  // use PUT to replace choices cleanly (serializer re-creates them)
+  const { data } = await api.put<Question>(`/questions/${id}/`, payload);
+  return data;
+}
+
+export async function deleteQuestion(id: number) {
+  await api.delete(`/questions/${id}/`);
+}
