@@ -193,3 +193,4 @@ class AttemptSerializer(serializers.ModelSerializer):
             "total",
             "attempt_questions",
         ]
+
