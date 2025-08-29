@@ -124,3 +124,5 @@ Player can review attempts and see correct answers.
 
 🛡 License
 MIT — use freely for learning or as a starter project.
+
+> Note: Full question management (create, read, update, delete including nested choices) is available in Django Admin (/admin). The SPA Admin page provides a lightweight interface for common actions; for advanced bulk edits, use Django Admin.
